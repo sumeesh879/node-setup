@@ -5,7 +5,7 @@ import logger     from '../logger';
 
 const router = express.Router();
 
-router.get('*', (request, response) => {
+router.get('/', (request, response) => {
   logger.info('Logger works! 👍');
   response.json({ success: true });
 });
